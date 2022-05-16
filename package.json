@@ -1,0 +1,26 @@
+{
+  "name": "circuit_breaker",
+  "version": "1.0.0",
+  "description": "fault -tolerance and circuit break resilence servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start-server": "npm run build && node build/index.js",
+    "test-breaker": "npm run build && node build/test.js"
+  },
+  "Keywords": [
+    "fault-tolerance",
+    "resilient",
+    "circuit-breakers"
+  ],
+  "author": "Eldridge",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
